@@ -1,56 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/itemCardHorizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="12dp"
-    android:elevation="8dp">
+    android:backgroundTint="@color/colorPrimaryDark"
+    android:elevation="8dp"
+    app:cardCornerRadius="18sp">
 
 
-        <ImageView
-            android:id="@+id/ivAvatar"
-            android:layout_width="match_parent"
-            android:scaleType="centerCrop"
-            android:layout_height="150dp"
-            android:layout_margin="10dp"
-            android:layout_centerVertical="true" />
+    <ImageView
+        android:id="@+id/ivAvatar"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:scaleType="fitXY" />
 
-<!--        <TextView-->
-<!--            android:id="@+id/tvId"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="jajaj"-->
-<!--            android:layout_marginStart="20dp"-->
-<!--            android:layout_marginTop="10dp"-->
-<!--            android:layout_toEndOf="@id/ivAvatar"-->
-<!--            android:padding="12dp" />-->
-
-<!--        <TextView-->
-<!--            android:id="@+id/tvFirstName"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="jajaj"-->
-<!--            android:layout_below="@id/tvId"-->
-<!--            android:layout_marginStart="20dp"-->
-<!--            android:layout_toEndOf="@id/ivAvatar"-->
-<!--            android:padding="12dp" />-->
-
-<!--        <TextView-->
-<!--            android:id="@+id/tvLastName"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_below="@id/tvFirstName"-->
-<!--            android:layout_marginStart="20dp"-->
-<!--            android:text="jajaj"-->
-<!--            android:layout_toEndOf="@id/ivAvatar"-->
-<!--            android:padding="12dp" />-->
-
-<!--        <TextView-->
-<!--            android:id="@+id/tvEmail"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_below="@+id/tvLastName"-->
-<!--            android:layout_marginStart="20dp"-->
-<!--            android:layout_toEndOf="@id/ivAvatar"-->
-<!--            android:text="jajaj"-->
-<!--            android:padding="12dp" />-->
 </androidx.cardview.widget.CardView>

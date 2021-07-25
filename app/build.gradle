@@ -78,5 +78,7 @@ dependencies {
     //lottie animations
     implementation "com.airbnb.android:lottie:3.7.0"
 
+//ZoomLayoutManager
+    implementation 'com.github.Spikeysanju:ZoomRecylerLayout:1.0'
 
 }
