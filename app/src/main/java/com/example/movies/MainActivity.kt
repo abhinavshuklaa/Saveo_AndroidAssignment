@@ -3,6 +3,7 @@ package com.example.movies
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
+import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.*
@@ -17,19 +18,26 @@ class MainActivity : AppCompatActivity(), RecyclerViewItemClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        /**
+         * setting the custom action bar as per the design
+         */
+        getSupportActionBar()?.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar()?.setCustomView(R.layout.abs_main_activity)
         recyclerViewVertical = findViewById(R.id.recyclerViewVerticalGrids)
         recyclerView = findViewById(R.id.recyclerViewHorizontal)
         initRecyclerView()
         initViewModel()
     }
 
+    /**
+     * Setting the recycler view using scope function
+     */
     private fun initRecyclerView() {
 
         recyclerViewVertical.apply {
             layoutManager = StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL)
 
             horizontalViewAdapter = HorizontalViewAdapter(this@MainActivity)
-//            adapter = horizontalViewAdapter
 
         }
 
@@ -45,6 +53,9 @@ class MainActivity : AppCompatActivity(), RecyclerViewItemClickListener {
         }
     }
 
+    /**
+     * Initialising the ViewModel pattern
+     */
     private fun initViewModel() {
         val viewModel = ViewModelProvider(this).get(MainActivityViewModel::class.java)
         viewModel.getRecyclerListObserver()?.observe(this, {
@@ -62,24 +73,23 @@ class MainActivity : AppCompatActivity(), RecyclerViewItemClickListener {
         })
     }
 
+    /**
+     * Overridden method to handle the clicks and transferring data
+     */
     override fun onItemClicked(position: Int, results: ResponseModelItem) {
-        val intent = Intent(this,MovieDetailsActivity::class.java)
-        intent.putExtra("movieName",results.name.toString())
-        intent.putExtra("premiered",results.premiered.toString())
-        intent.putExtra("summary",results.summary.toString())
-        val arrayList:ArrayList<String> = ArrayList()
-        for( i in results.genres!!.indices){
-            arrayList.add(results.genres.get(i))
+        val intent = Intent(this, MovieDetailsActivity::class.java)
+        intent.putExtra("movieName", results.name.toString())
+        intent.putExtra("premiered", results.premiered.toString())
+        intent.putExtra("summary", results.summary.toString())
+        val arrayList: ArrayList<String> = ArrayList()
+        for (i in results.genres!!.indices) {
+            arrayList.add(results.genres[i])
         }
-        intent.putExtra("genre",arrayList)
-        intent.putExtra("rating",results.rating.toString())
-        intent.putExtra("image",results.image!!.original).toString()
+        intent.putExtra("genre", arrayList)
+        intent.putExtra("rating", results.rating.toString())
+        intent.putExtra("duration", results.runtime).toString()
+        intent.putExtra("image", results.image!!.original).toString()
         startActivity(intent)
-
-
-
-
-
 
 
     }
