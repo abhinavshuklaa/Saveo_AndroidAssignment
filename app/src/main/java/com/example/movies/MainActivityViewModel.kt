@@ -23,7 +23,7 @@ class MainActivityViewModel : ViewModel() {
             .build()
 
         val executor: Executor = Executors.newFixedThreadPool(5)
-        responseModelItemList=  LivePagedListBuilder<Int, ResponseModelItem>(factory, config)
+        responseModelItemList = LivePagedListBuilder<Int, ResponseModelItem>(factory, config)
             .setFetchExecutor(executor)
             .build()
 

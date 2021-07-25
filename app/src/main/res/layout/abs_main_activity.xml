@@ -19,11 +19,12 @@
         android:layout_centerVertical="true"
         android:text="Movies"
         android:textColor="#FFFFFF" />
+
     <ImageView
         android:layout_width="24dp"
         android:layout_height="24dp"
-        android:layout_centerVertical="true"
         android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
         android:layout_marginStart="5dp"
         android:src="@drawable/ic_baseline_search_24" />
 

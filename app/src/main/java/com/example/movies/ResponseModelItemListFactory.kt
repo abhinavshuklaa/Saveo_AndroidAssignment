@@ -5,8 +5,8 @@ import androidx.paging.DataSource
 import com.example.movies.Model.ResponseModelItem
 
 
-class ResponseModelItemListFactory() :
-    androidx.paging.DataSource.Factory<Int, ResponseModelItem>() {
+class ResponseModelItemListFactory :
+    DataSource.Factory<Int, ResponseModelItem>() {
     private var mutableLiveData: MutableLiveData<ResponseModelItemSource>? = null
 
     init {

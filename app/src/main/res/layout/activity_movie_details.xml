@@ -61,13 +61,13 @@
                 <Button
                     android:id="@+id/tvGenre"
                     android:layout_width="wrap_content"
-                    android:paddingLeft="4dp"
-                    android:paddingRight="4dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="2dp"
                     android:layout_weight="1"
                     android:background="@drawable/bg_button"
                     android:fontFamily="@font/open_sans"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
                     android:textColor="@color/white"
                     android:textSize="12sp" />
 
@@ -78,9 +78,9 @@
                     android:layout_margin="2dp"
                     android:layout_weight="1"
                     android:background="@drawable/bg_button"
+                    android:fontFamily="@font/open_sans"
                     android:paddingLeft="4dp"
                     android:paddingRight="4dp"
-                    android:fontFamily="@font/open_sans"
                     android:textColor="@color/white"
                     android:textSize="12sp" />
 
@@ -91,9 +91,9 @@
                     android:layout_margin="2dp"
                     android:layout_weight="1"
                     android:background="@drawable/bg_button"
+                    android:fontFamily="@font/open_sans"
                     android:paddingLeft="4dp"
                     android:paddingRight="4dp"
-                    android:fontFamily="@font/open_sans"
                     android:textColor="@color/white"
                     android:textSize="12sp" />
 
@@ -129,12 +129,12 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="end|center_vertical"
         android:background="@drawable/bg_center_button"
         android:fontFamily="@font/open_sans"
-        android:text="@string/book_now"
-        android:layout_gravity="end|center_vertical"
-        android:textColor="#DEEBED"
         android:padding="4dp"
+        android:text="@string/book_now"
+        android:textColor="#DEEBED"
         android:textSize="22sp"
         android:textStyle="bold" />
 

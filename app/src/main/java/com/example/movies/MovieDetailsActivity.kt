@@ -31,12 +31,12 @@ class MovieDetailsActivity : AppCompatActivity() {
         tvSummary.text = summary
         tvMovieName.text = name
         Glide.with(ivMovieImage).load(imageUrl).centerCrop().into(ivMovieImage)
-        tvRatings.text = "⭐⭐⭐⭐${rating}"
+        tvRatings.text = "⭐⭐⭐${rating}"
         tvPremiereDate.text = "R|${duration}|${premeire}"
         if (list.size != 0) {
             tvGenre.text = list.get(0)
-            tvGenre_1.visibility=View.INVISIBLE
-            tvGenre_2.visibility=View.INVISIBLE
+            tvGenre_1.visibility = View.INVISIBLE
+            tvGenre_2.visibility = View.INVISIBLE
 
         } else if (list.size == 2)
             tvGenre_1.text = list.get(1)
