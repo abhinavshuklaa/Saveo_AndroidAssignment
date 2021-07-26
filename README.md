@@ -1,8 +1,14 @@
 # Saveo_AndroidAssignment(UI + MVVM + Retrofit + RecyclerView with Pagination)
-
 ##Problem Statement
 > Develop an android app with a movie list and show movie detail when click as shown in 
 design.
+
+##ScreenShots
+![Ist](https://user-images.githubusercontent.com/56826217/126928288-409b35d6-1e00-4f35-b258-976dd24b09d1.png)
+![IVth](https://user-images.githubusercontent.com/56826217/126928276-bba2677d-9de7-45ae-8605-0acf0e17d2d5.png)
+![IInd](https://user-images.githubusercontent.com/56826217/126928283-45c52859-c175-4846-b455-13184bbeb32c.png)
+![IIIrd](https://user-images.githubusercontent.com/56826217/126928282-4204dab4-603e-4704-a2b0-9c65a286e0cd.png)
+
 
 
 ## Must Follow
