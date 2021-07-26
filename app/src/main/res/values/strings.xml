@@ -7,4 +7,6 @@
     <string name="reviews_text">Reviews : 12(Critics)|2345(User)</string>
     <string name="synopsis">Synopsis</string>
     <string name="book_now">BOOK NOW</string>
+    <string name="movies">Movies</string>
+    <string name="movies_1">Movies</string>
 </resources>

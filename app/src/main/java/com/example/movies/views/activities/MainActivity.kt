@@ -1,4 +1,4 @@
-package com.example.movies
+package com.example.movies.views.activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,7 +7,11 @@ import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.*
+import com.example.movies.*
 import com.example.movies.Model.ResponseModelItem
+import com.example.movies.viewModel.MainActivityViewModel
+import com.example.movies.views.adapters.HorizontalViewAdapter
+import com.example.movies.views.interfaces.RecyclerViewItemClickListener
 import kotlinx.android.synthetic.main.activity_main.*
 import www.sanju.zoomrecyclerlayout.ZoomRecyclerLayout
 
@@ -18,15 +22,25 @@ class MainActivity : AppCompatActivity(), RecyclerViewItemClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        /**
-         * setting the custom action bar as per the design
-         */
-        getSupportActionBar()?.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
-        getSupportActionBar()?.setCustomView(R.layout.abs_main_activity)
-        recyclerViewVertical = findViewById(R.id.recyclerViewVerticalGrids)
-        recyclerView = findViewById(R.id.recyclerViewHorizontal)
+
+        setCustomActionBar()
+        initialisingRecyclerViews()
         initRecyclerView()
         initViewModel()
+    }
+
+    private fun initialisingRecyclerViews() {
+        recyclerViewVertical = findViewById(R.id.recyclerViewVerticalGrids)
+        recyclerView = findViewById(R.id.recyclerViewHorizontal)
+    }
+
+    /**
+     * setting the custom action bar as per the design
+     */
+
+    private fun setCustomActionBar() {
+        getSupportActionBar()?.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar()?.setCustomView(R.layout.abs_main_activity)
     }
 
     /**

@@ -1,4 +1,4 @@
-package com.example.movies
+package com.example.movies.views.utils
 
 import androidx.paging.PageKeyedDataSource
 import com.example.movies.Model.ResponseModelItem

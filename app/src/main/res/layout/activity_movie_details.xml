@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="2"
-    tools:context=".MovieDetailsActivity">
+    tools:context=".views.activities.MovieDetailsActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -37,20 +37,12 @@
 
             <TextView
                 android:id="@+id/tvMovieName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="4dp"
-                android:fontFamily="@font/open_sans"
-                android:textColor="@color/white"
+                style="@style/textviews_params"
                 android:textSize="22sp" />
 
             <TextView
                 android:id="@+id/tvPremiereDate"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="4dp"
-                android:fontFamily="@font/open_sans"
-                android:textColor="@color/white"
+                style="@style/textviews_params"
                 android:textSize="14sp" />
 
             <LinearLayout
@@ -60,42 +52,15 @@
 
                 <TextView
                     android:id="@+id/tvGenre"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="2dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/bg_button"
-                    android:fontFamily="@font/open_sans"
-                    android:paddingLeft="4dp"
-                    android:paddingRight="4dp"
-                    android:textColor="@color/white"
-                    android:textSize="12sp" />
+                    style="@style/textviews_details_params" />
 
                 <TextView
                     android:id="@+id/tvGenre_1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="2dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/bg_button"
-                    android:fontFamily="@font/open_sans"
-                    android:paddingLeft="4dp"
-                    android:paddingRight="4dp"
-                    android:textColor="@color/white"
-                    android:textSize="12sp" />
+                    style="@style/textviews_details_params" />
 
                 <TextView
                     android:id="@+id/tvGenre_2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="2dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/bg_button"
-                    android:fontFamily="@font/open_sans"
-                    android:paddingLeft="4dp"
-                    android:paddingRight="4dp"
-                    android:textColor="@color/white"
-                    android:textSize="12sp" />
+                    style="@style/textviews_details_params" />
 
             </LinearLayout>
 
