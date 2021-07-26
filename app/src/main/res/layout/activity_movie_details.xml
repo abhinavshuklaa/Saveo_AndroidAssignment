@@ -24,7 +24,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
             android:layout_weight="0.85"
-            android:scaleType="fitCenter"
+            android:scaleType="fitXY"
             android:src="@drawable/ic_launcher_foreground" />
 
 
@@ -58,7 +58,7 @@
                 android:layout_height="wrap_content"
                 android:weightSum="3">
 
-                <Button
+                <TextView
                     android:id="@+id/tvGenre"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -71,7 +71,7 @@
                     android:textColor="@color/white"
                     android:textSize="12sp" />
 
-                <Button
+                <TextView
                     android:id="@+id/tvGenre_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -84,7 +84,7 @@
                     android:textColor="@color/white"
                     android:textSize="12sp" />
 
-                <Button
+                <TextView
                     android:id="@+id/tvGenre_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -125,18 +125,6 @@
 
 
     </LinearLayout>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end|center_vertical"
-        android:background="@drawable/bg_center_button"
-        android:fontFamily="@font/open_sans"
-        android:padding="4dp"
-        android:text="@string/book_now"
-        android:textColor="#DEEBED"
-        android:textSize="22sp"
-        android:textStyle="bold" />
 
 
     <ScrollView
