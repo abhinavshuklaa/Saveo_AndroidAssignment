@@ -4,12 +4,8 @@
 design.
 
 ##ScreenShots
-![Ist](https://user-images.githubusercontent.com/56826217/126928288-409b35d6-1e00-4f35-b258-976dd24b09d1.png)
-![IVth](https://user-images.githubusercontent.com/56826217/126928276-bba2677d-9de7-45ae-8605-0acf0e17d2d5.png)
-![IInd](https://user-images.githubusercontent.com/56826217/126928283-45c52859-c175-4846-b455-13184bbeb32c.png)
-![IIIrd](https://user-images.githubusercontent.com/56826217/126928282-4204dab4-603e-4704-a2b0-9c65a286e0cd.png)
 
-
+<img src ="https://user-images.githubusercontent.com/56826217/126928288-409b35d6-1e00-4f35-b258-976dd24b09d1.png" width=200 height=400/><img src ="https://user-images.githubusercontent.com/56826217/126928276-bba2677d-9de7-45ae-8605-0acf0e17d2d5.png" width=200 height=400/><img src ="https://user-images.githubusercontent.com/56826217/126928283-45c52859-c175-4846-b455-13184bbeb32c.png" width=200 height=400/><img src ="https://user-images.githubusercontent.com/56826217/126928282-4204dab4-603e-4704-a2b0-9c65a286e0cd.png" width=200 height=400/>
 
 ## Must Follow
 -  Must be in Kotlin.
